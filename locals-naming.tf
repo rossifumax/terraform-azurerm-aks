@@ -8,4 +8,5 @@ locals {
   appgw_identity_name = coalesce(var.appgw_user_assigned_identity_custom_name, data.azurecaf_name.appgw_identity.result)
 
   appgw_name = coalesce(var.custom_appgw_name, data.azurecaf_name.appgw.result)
+  toto       = "toto"
 }
